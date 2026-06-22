@@ -1,0 +1,508 @@
+/* barra de navegacion */
+.mi-navbar {
+  background-color: var(--color-fondo) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mi-navbar .container,
+.mi-navbar .navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mi-navbar .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mi-navbar .navbar-nav {
+  gap: 3px;
+}
+
+.mi-navbar .navbar-brand {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--marron) !important;
+}
+
+.mi-navbar .nav-link {
+  color: var(--marron) !important;
+  font-size: 14px;
+  padding: 8px 15px !important;
+  transition: background 0.3s;
+}
+
+.mi-navbar .nav-link:hover {
+  color: var(--color-principal) !important;
+  background-color: var(--color-claro);
+  border-radius: 6px;
+}
+
+/* seccion hero */
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-fondo), var(--color-claro));
+  padding-top: 70px;
+}
+
+.contenido-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 30px 10px;
+}
+
+.texto-banner h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.texto-banner h1 span {
+  color: var(--color-principal);
+}
+
+.texto-banner p {
+  color: var(--marron-claro);
+  margin-bottom: 15px;
+}
+
+.botones-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* botones comunes */
+.boton-principal,
+.boton-secundario {
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.boton-principal {
+  background: var(--color-principal);
+  color: var(--blanco);
+}
+
+.boton-principal:hover {
+  opacity: 0.85;
+  color: var(--blanco);
+}
+
+.boton-secundario {
+  background: transparent;
+  color: var(--marron);
+  border: 2px solid var(--marron-claro);
+}
+
+.boton-secundario:hover {
+  background: var(--marron);
+  color: var(--blanco);
+}
+
+.imagen-banner img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* seccion beneficios */
+.beneficios {
+  background-color: var(--blanco);
+}
+
+.caja-beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 25px 15px;
+  background-color: var(--color-claro);
+  border-radius: 10px;
+}
+
+.beneficio i {
+  font-size: 36px;
+  color: var(--color-principal);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.beneficio h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.beneficio p {
+  font-size: 14px;
+  color: var(--marron-claro);
+}
+
+/* seccion productos (grid) */
+.productos {
+  background-color: var(--color-claro);
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+}
+
+.tarjeta-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tarjeta-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--color-principal);
+  color: var(--blanco);
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tarjeta-info {
+  padding: 15px;
+}
+
+.tarjeta-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tarjeta-info p {
+  font-size: 13px;
+  color: var(--marron-claro);
+  margin-bottom: 10px;
+}
+
+.caja-precio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.precio {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+.boton-agregar {
+  background: var(--marron);
+  color: var(--blanco);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-agregar:hover {
+  background: var(--color-principal);
+  color: var(--blanco);
+}
+
+/* seccion informativa (sobre nosotros) */
+.nosotros {
+  background-color: var(--color-fondo);
+}
+
+.contenido-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.imagen-nosotros img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.texto-nosotros h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--color-principal);
+}
+
+.texto-nosotros p {
+  color: var(--marron-claro);
+  margin-bottom: 10px;
+}
+
+.datos {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.dato {
+  flex: 1;
+  background: var(--color-claro);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dato-numero {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+.dato-texto {
+  font-size: 12px;
+  color: var(--marron);
+}
+
+/* llamado a la accion */
+#cta {
+  background: linear-gradient(135deg, var(--color-principal), var(--marron));
+  color: var(--blanco);
+  text-align: center;
+  padding: 60px 15px;
+}
+
+#cta h2 {
+  color: var(--blanco);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+#cta p {
+  color: var(--color-claro);
+  font-size: 15px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton-cta {
+  display: inline-block;
+  background: var(--blanco);
+  color: var(--color-principal);
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.boton-cta:hover {
+  background: var(--color-claro);
+  color: var(--color-principal);
+}
+
+/* pedidos y formulario */
+.pedidos {
+  background-color: var(--marron);
+  color: var(--color-fondo);
+}
+
+.pedidos .titulo h2 {
+  color: var(--color-fondo);
+}
+
+.pedidos .titulo p {
+  color: var(--color-claro);
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.titulo-formulario {
+  color: var(--color-fondo);
+  font-size: 20px;
+}
+
+.formulario .form-label {
+  color: var(--color-claro);
+  font-size: 14px;
+}
+
+.formulario .form-control,
+.formulario .form-select {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-fondo);
+  border-radius: 6px;
+}
+
+.formulario .form-control:focus,
+.formulario .form-select:focus {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 0 3px rgba(232, 145, 155, 0.2);
+  color: var(--color-fondo);
+}
+
+.formulario .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.boton-enviar {
+  width: 100%;
+  background: var(--color-principal);
+  color: var(--blanco);
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.boton-enviar:hover {
+  background: var(--color-secundario);
+  color: var(--blanco);
+}
+
+/* pie de pagina */
+.pie {
+  background-color: var(--marron-oscuro);
+  color: var(--color-claro);
+  padding: 30px 15px;
+}
+
+.pie p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.pie-marca {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: var(--color-fondo) !important;
+  margin-bottom: 5px;
+}
+
+.pie-enlaces,
+.pie-redes {
+  margin: 10px 0;
+}
+
+.pie-enlaces a {
+  color: var(--color-claro);
+  margin: 0 8px;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.pie-enlaces a:hover {
+  color: var(--color-principal);
+}
+
+.pie-redes a {
+  color: var(--color-claro);
+  font-size: 18px;
+  margin: 0 6px;
+  transition: color 0.3s;
+}
+
+.pie-redes a:hover {
+  color: var(--color-principal);
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* tabletas (768px) */
+@media (min-width: 768px) {
+  .seccion {
+    padding: 60px 30px;
+  }
+
+  .contenido-banner,
+  .contenido-nosotros {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .texto-banner,
+  .imagen-banner,
+  .imagen-nosotros,
+  .texto-nosotros {
+    flex: 1;
+  }
+
+  .texto-banner h1 {
+    font-size: 40px;
+  }
+
+  .botones-banner {
+    justify-content: flex-start;
+  }
+
+  .caja-beneficios {
+    flex-direction: row;
+  }
+
+  .beneficio {
+    flex: 1;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* escritorio (992px) */
+@media (min-width: 992px) {
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .texto-banner h1 {
+    font-size: 48px;
+  }
+}

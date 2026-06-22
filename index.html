@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Dulce Tentación - Postres artesanales en Santo Domingo. Cupcakes, macarons, pasteles y más.">
+  <title>Dulce Tentación | Postres Artesanales</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Hojas de estilo externas -->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <!-- 1. Encabezado y navegación -->
+  <nav id="navbar" class="navbar navbar-expand-lg mi-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        🧁 Dulce Tentación
+      </a>
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#beneficios">Beneficios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pedidos">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. Sección principal o hero -->
+  <header id="inicio" class="banner">
+    <div class="container">
+      <div class="contenido-banner">
+        <div class="texto-banner">
+          <h1>Postres Artesanales <span>Hechos con Amor</span></h1>
+          <p>Descubre nuestra selección de dulces artesanales preparados con ingredientes de calidad. Cada bocado es una
+            experiencia única.</p>
+          <div class="botones-banner">
+            <a href="#productos" class="btn boton-principal">
+              <i class="bi bi-stars me-2"></i>Ver Catálogo
+            </a>
+            <a href="#pedidos" class="btn boton-secundario">
+              <i class="bi bi-heart me-2"></i>Pedir Ahora
+            </a>
+          </div>
+        </div>
+        <div class="imagen-banner">
+          <img src="img/postres1.jpg" alt="Exquisitos postres artesanales de muestra" width="600" height="400">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Sección de beneficios  -->
+    <section id="beneficios" class="seccion beneficios">
+      <div class="container">
+        <div class="titulo">
+          <h2>Nuestros Beneficios</h2>
+          <p>Lo que nos hace diferentes y especiales</p>
+        </div>
+        <div class="caja-beneficios">
+          <div class="beneficio">
+            <i class="bi bi-heart-fill"></i>
+            <h3>Elaboración Artesanal</h3>
+            <p>Cada postre se prepara a mano siguiendo recetas tradicionales con mucho amor.</p>
+          </div>
+          <div class="beneficio">
+            <i class="bi bi-star-fill"></i>
+            <h3>Calidad Premium</h3>
+            <p>Utilizamos ingredientes frescos y seleccionados para asegurar el mejor sabor.</p>
+          </div>
+          <div class="beneficio">
+            <i class="bi bi-truck"></i>
+            <h3>Entrega a Domicilio</h3>
+            <p>Llevamos tu pedido de manera segura y puntual hasta la puerta de tu casa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Sección de servicios, productos o actividades-->
+    <section id="productos" class="seccion productos">
+      <div class="container">
+        <div class="titulo">
+          <h2>Nuestros Productos</h2>
+          <p>Las mejores tentaciones listas para ti</p>
+        </div>
+        <div class="grid-productos">
+          <!-- tarjeta 1 -->
+          <article class="tarjeta">
+            <div class="tarjeta-img">
+              <img src="img/postres3.jpg" alt="Cupcakes decorados" loading="lazy">
+              <span class="etiqueta">Popular</span>
+            </div>
+            <div class="tarjeta-info">
+              <h3>Cupcakes Especiales</h3>
+              <p>Esponjosos panquecitos decorados suavesd de vainilla o chocolate.</p>
+              <div class="caja-precio">
+                <span class="precio">$2.50</span>
+                <a href="#pedidos" class="boton-agregar" title="Preguntar por este producto">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- tarjeta 2 -->
+          <article class="tarjeta">
+            <div class="tarjeta-img">
+              <img src="img/postres4.jpg" alt="Macarons de colores" loading="lazy">
+              <span class="etiqueta">Nuevo</span>
+            </div>
+            <div class="tarjeta-info">
+              <h3>Macarons Franceses</h3>
+              <p>Clásicos bocadillos crujientes rellenos de ganache de sabores frutales.</p>
+              <div class="caja-precio">
+                <span class="precio">$1.80</span>
+                <a href="#pedidos" class="boton-agregar" title="Preguntar por este producto">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- tarjeta 3 -->
+          <article class="tarjeta">
+            <div class="tarjeta-img">
+              <img src="img/postres5.jpg" alt="Pastel personalizado de celebración" loading="lazy">
+              <span class="etiqueta">Especial</span>
+            </div>
+            <div class="tarjeta-info">
+              <h3>Pasteles a Pedido</h3>
+              <p>Diseños personalizados y sabores super pros para bodas y cumpleaños.</p>
+              <div class="caja-precio">
+                <span class="precio">$25.00</span>
+                <a href="#pedidos" class="boton-agregar" title="Preguntar por este producto">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- tarjeta 4 -->
+          <article class="tarjeta">
+            <div class="tarjeta-img">
+              <img src="img/postres6.jpg" alt="Brownies de chocolate" loading="lazy">
+            </div>
+            <div class="tarjeta-info">
+              <h3>Brownies Fudge</h3>
+              <p>Cuadritos húmedos de chocolate con nueces y un sabor suave.</p>
+              <div class="caja-precio">
+                <span class="precio">$3.00</span>
+                <a href="#pedidos" class="boton-agregar" title="Preguntar por este producto">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sección informativa -->
+    <section id="nosotros" class="seccion nosotros">
+      <div class="container">
+        <div class="titulo">
+          <h2>Sobre Nosotros</h2>
+          <p>Conoce nuestra historia y pasión</p>
+        </div>
+        <div class="contenido-nosotros">
+          <div class="imagen-nosotros">
+            <img src="img/postres2.jpg" alt="Nuestra cocina y preparación de pasteles" width="500" height="400">
+          </div>
+          <div class="texto-nosotros">
+            <h3>Dulzura en cada detalle</h3>
+            <p>En <strong>Dulce Tentación</strong> creemos que los postres son más que simples dulces son momentos de
+              felicidad compartida. Nuestra pastelería nació en 2020.</p>
+            <p>Desde galletas personalizadas hasta los pasteles más complejos para eventos.</p>
+            <div class="datos">
+              <div class="dato">
+                <span class="dato-numero">+500</span>
+                <span class="dato-texto">Clientes</span>
+              </div>
+              <div class="dato">
+                <span class="dato-numero">+1200</span>
+                <span class="dato-texto">Entregas</span>
+              </div>
+              <div class="dato">
+                <span class="dato-numero">5</span>
+                <span class="dato-texto">Opiniones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Llamado a la acción -->
+    <section id="cta">
+      <h2>¿Tienes una celebración en camino?</h2>
+      <p>Hacemos pasteles personalizados y mesas de dulces completas para bodas todo evento.</p>
+      <a href="#pedidos" class="boton-cta">Cotizar mi Evento</a>
+    </section>
+
+    <!-- 7. Formulario visual -->
+    <section id="pedidos" class="seccion pedidos">
+      <div class="container">
+        <div class="titulo">
+          <h2>Realiza tu Consulta</h2>
+          <p>Escríbenos y nos pondremos en contacto contigo</p>
+        </div>
+
+        <div class="formulario">
+          <h3 class="text-center mb-4 titulo-formulario">
+            <i class="bi bi-envelope-heart me-2"></i>Contáctanos
+          </h3>
+          <form id="formContacto">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+              </div>
+              <div class="col-12">
+                <label for="asunto" class="form-label">Teléfono o Asunto</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Número de celular o motivo de contacto"
+                  required>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4"
+                  placeholder="Cuéntanos qué postre o servicio te interesa.." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn boton-enviar">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Pie de página -->
+  <footer class="pie">
+    <div class="container text-center">
+      <p class="pie-marca">🧁 Dulce Tentación</p>
+      <p>Postres artesanales elaborados con amor y dedicación.</p>
+      <p><i class="bi bi-geo-alt-fill me-1"></i>Santo Domingo, Ecuador | <i class="bi bi-telephone-fill me-1"></i>+593
+        963054916</p>
+      <p><i class="bi bi-envelope-fill me-1"></i>mevalencia7@espe.edu.ec</p>
+
+      <!-- Enlaces de navegación -->
+      <div class="pie-enlaces">
+        <a href="#inicio">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#pedidos">Contacto</a>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="pie-redes">
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      </div>
+
+      <p class="mt-4 mb-1">&copy; 2025 Dulce Tentación. Todos los derechos reservados.</p>
+      <p class="text-muted" style="font-size: 11px;">Desarrollado por <strong>Moisés Elías Valencia Ramírez</strong></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

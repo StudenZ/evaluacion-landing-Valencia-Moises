@@ -1,0 +1,73 @@
+/* variables de colores */
+:root {
+  --color-principal: #D45D79;
+  --color-secundario: #E8919B;
+  --color-claro: #FADDE1;
+  --color-texto: #3E2723;
+  --color-fondo: #FFF8F0;
+  --marron-claro: #A67C6D;
+  --marron: #5D4037;
+  --marron-oscuro: #3E2723;
+  --crema-oscuro: #F5E6D3;
+  --blanco: #FFFFFF;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* estilos base */
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--marron);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* clases reutilizables */
+.seccion {
+  padding: 50px 15px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.titulo p {
+  color: var(--marron-claro);
+  font-size: 15px;
+}
